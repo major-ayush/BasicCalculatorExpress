@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic-Calculator</title>
+    
+    
+    <style>
+        div {
+    height : 450px;
+    width : 300px;
+    background-color: red;
+    border-radius: 5%;
+    margin : auto;
+    background-color: #B9EDDD;
+}
+
+input {
+    height: 50px;
+    width : 290px;  
+    margin-top: 20px;
+    margin-left: 2px;
+    border-radius: 5%;
+}
+
+button{
+    height : 40px;
+    width: 250px;
+    margin-top: 15px;
+    margin-left : 25px;
+    border-radius: 10%;
+    background-color: #E8A0BF;
+}
+
+button:hover{
+    background-color: aqua;
+}
+    </style>
+</head>
+<body style="background-color : #FFABAB">
+    <h1 style="text-align: center; font-size: 100px;">My Calculator</h1>
+    <div>
+        <form action = "/" method = "post" >
+        <input name = "FirstNumber" placeholder="First Number" id = "firstNum" required>
+        <input name = "SecondNumber" placeholder="Second Number" id = "secondNum" required>
+        <button name="button" type = "submit" value = "+">Plus</button>
+        <button name="button" type = "submit" value = "-">Minus</button>
+        <button name ="button" type = "submit" value = "*">Multiply</button>
+        <button name="button" type = "submit" value = "/">Divide</button>
+        </form>
+        <button name = "button"  value = "resetIt" onclick = "f()">Reset</button>
+    </div>
+    <script>
+        function f(){
+            document.getElementById("firstNum").value = "";
+            document.getElementById("secondNum").value = "";
+        }
+        
+    </script>
+</body>
+</html>
